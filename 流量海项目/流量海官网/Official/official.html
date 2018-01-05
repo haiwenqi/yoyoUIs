@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/official.css"/>
+		<title>流量海</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="width_1024 center clear header_innerWrap">
+					<a href="official.html" class="header_item header_left fl">流量海</a>
+					<a href="javascript:;" class="header_item header_right fr">联系我们</a>
+				</div>
+			</header>
+			<section class="main_content">
+				<div class="width_1024 center">
+					<h1>免费获取流量的手机APP</h1>
+					<p class="purple p1">随时随地，获取全网的免费流量，还有更多的折扣等你来</p>
+					<div class="downLoad_btn_group clear">
+						<a href="javascript:;" class="downLoad_btn downLoad_btn_andriod">下载安卓版 <span class="small_txt">v1.0</span></a>
+						<a href="javascript:;" class="downLoad_btn downLoad_btn_ios">iPhone版<span class="small_txt">稍后推出</span></a>
+					</div>
+					<p class="purple p2">更多流量优惠活动敬请期待</p>
+					<div class="demo_box center"><img src="img/demo.jpg"/></div>
+				</div>
+				<div class="gradient_circle">
+					<img src="../Group 6.png"/>
+				</div>
+			</section>
+			<footer>
+				<div class="buf_tuoyuan"></div>
+				<section class="circle_4group_wrap">
+					<div class="circle_4group width_1024 center clear">
+						<div class="circle_box_wrap"><span class="circle_box circle_box_1">全网</span><p>全网流量</p></div> 
+						<div class="circle_box_wrap"><span class="circle_box circle_box_2">折扣</span><p>折扣流量</p></div> 
+						<div class="white_box"></div>
+						<div class="circle_box_wrap"><span class="circle_box circle_box_3">奖励</span><p>登录奖励</p></div> 
+						<div class="circle_box_wrap"><span class="circle_box circle_box_4">分享</span><p>分享有礼</p></div> 
+					</div>
+				</section>
+				<section class="footer_txt">
+					
+					<div class="center width_1024 clear">
+						<p class="footer_txt_1 fl">Email:support@mindmobi.com</p>
+						<p class="footer_txt_2 fl">Copyright:mindmobi.com All Rights Reserved</p>
+						<p class="footer_txt_3 fr">京ICP备14052953号-1</p>
+					</div>
+				</section>
+			</footer>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("document").ready(function(){
+				var screenWh = screen.width;
+				var wh_1024 = 1024;
+				var footerTxt_wh_1 = $(".footer_txt_1").width();
+				var footerTxt_wh_3 = $(".footer_txt_3").width();
+				$(".footer_txt_2").width(wh_1024 - footerTxt_wh_1 - footerTxt_wh_3);
+				$(".wrap").width(screenWh);
+				$(".gradient_circle").width(screenWh*0.8)
+			})
+		</script>
+	</body>
+</html>
+<!--
+	背景渐变兼容
+	发邮件
+	底部半椭圆
+-->
